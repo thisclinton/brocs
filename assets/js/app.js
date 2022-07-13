@@ -24,6 +24,18 @@ const linkClick = () => {
 };
 
 navLink.forEach((n) => n.addEventListener("click", linkClick));
+
+/*========== SCROLL HEADER ============*/
+const scrollHeader = () => {
+  const header = document.getElementById("header");
+  if (this.scrollY >= 50) {
+    header.classList.add("scroll-header");
+  } else {
+    header.classList.remove("scroll-header");
+  }
+};
+
+window.addEventListener("scroll", scrollHeader);
 /* const selectElement = selector => {
     const element = document.querySelector(selector);
     if(element) return element;
