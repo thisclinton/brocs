@@ -325,7 +325,8 @@ body.light-theme{
     position: relative;
     text-align: center;
     background-color: var(--light-color);
-    padding-top: 2rem;
+    margin: 0 1.7rem;
+    padding-top: 4rem;
     border: 1px solid var(--border-color);
     overflow-y: hidden;
     transition: .3s;
