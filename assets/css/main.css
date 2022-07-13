@@ -253,7 +253,7 @@ body.light-theme{
 
 .home__social {
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: -3rem;
     transform: rotate(-90deg);
     display: flex;
