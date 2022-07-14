@@ -17,6 +17,7 @@
     --transparent-light-color: rgba(255,255,255,.05);
     --transparent-dark-color: rgba(0,0,0,.75);
     --button-color: hsl(0, 0%, 17%);
+    --button-color-alt: hsl(0, 0%, 21%);
     --font-family: 'Poppins', sans-serif;
     --font-size-xsm: 1.2rem;
     --font-size-sm: 1.6rem;
@@ -387,4 +388,88 @@ body.light-theme{
 
 .featured__card:hover .featured__price {
     margin-bottom: var(--margin-md);
+}
+
+.story__container {
+    row-gap: 7.5rem;
+}
+
+.story__title, 
+.story__description {
+    margin-bottom: var(--margin-lg);
+}
+
+.story__button {
+    font-size: var(--font-size-xsm);
+}
+
+.story__images {
+    position: relative;
+}
+
+.story__square {
+   width: 250px;
+   height: 250px;
+   background-color: var(--bg-color); 
+}
+
+.story__img {
+    width: 280px;
+    height: 240px;
+    position: absolute;
+    left: 3rem;
+    top: -3rem;
+}
+
+.product__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--margin-md);
+}
+
+.product__card {
+    position: relative;
+    background-color: var(--light-color);
+    text-align: center;
+    padding: 5rem 0;
+    border: 1px solid var(--border-color);
+    transition: .3s;
+}
+
+.product__img {
+    height: 125px;
+    margin: var(--margin-sm) auto;
+}
+
+.product__title,
+.product__price {
+    font-size: 1.4rem;
+}
+
+.product__title {
+    text-transform: uppercase;
+    margin-bottom: var(--margin-sm);
+}
+
+.product__price {
+    color: var(--bg-color);
+    font-weight: var(--font-bold);
+}
+
+.product__button {
+    position: absolute;
+    background-color: var(--button-color);
+    color: var(--light-color);
+    padding: .5rem;
+    font-size: .5rem;
+    right: 0;
+    bottom: 0;
+    transition: .3s;
+}
+
+.product__button:hover {
+    background-color: var(--button-color-alt);
+}
+
+.product__card:hover {
+    box-shadow: 0px 8px 32px hsla(0, 0%, 10%, .1)
 }
