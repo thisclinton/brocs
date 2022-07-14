@@ -424,6 +424,7 @@ body.light-theme{
 .product__container {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--margin-md);
+    margin: 0 var(--margin-sm);
 }
 
 .product__card {
@@ -472,4 +473,42 @@ body.light-theme{
 
 .product__card:hover {
     box-shadow: 0px 8px 32px hsla(0, 0%, 10%, .1)
+}
+
+.testimonial__quote {
+    margin-bottom: var(--margin-md);
+    background-color: var(--light-color);
+    display: inline-flex;
+    padding: .5rem .75rem;
+    font-size: 1.5rem;
+    color: var(--bg-color);
+    box-shadow: 0px 4px 12px hsla(0, 0%, 20%, .1);
+}
+
+.testimonial__description {
+    margin-bottom: var(--margin-sm);
+}
+
+.testimonial__date {
+    margin-bottom: var(--margin-lg);
+}
+
+.testimonial__data {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.testimonial__data-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 3rem;
+}
+
+.testimonial__details-name {
+    font-size: var(--font-size-sm);
+}
+
+.testimonial__details-job {
+    font-size: var(--font-size-xsm);
 }
