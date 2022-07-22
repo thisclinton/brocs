@@ -304,7 +304,7 @@ body.light-theme{
 }
 
 .button:hover {
-    background-color: hsl(31, 100%, 65%);
+    background-color: hsl(0, 0%, 25%);
 }
 
 .button--gray {
@@ -624,4 +624,33 @@ body.light-theme{
 
 .new__card:hover .new__price {
     margin-bottom: var(--margin-lg);
+}
+
+.newsletter__bg {
+    background-color: var(--bg-color);
+    padding: 3rem 3rem;
+    text-align: center;
+    row-gap: 2.5rem;
+}
+
+.newsletter__title {
+    font-size: var(--font-size-lg);
+    color: hsl(0, 0%, 15%);
+    margin-bottom: var(--margin-md);
+}
+
+.newsletter__description {
+    color: hsl(0, 0%, 35%);
+}
+
+.newsletter__subscribe {
+    display: flex;
+    flex-direction: column;
+    row-gap: .75rem;
+}
+
+.newsletter__input {
+    background-color: hsl(0, 0%, 94%);
+    padding: 1.25rem 1rem;
+    color: hsl(0, 0%, 15%);
 }
