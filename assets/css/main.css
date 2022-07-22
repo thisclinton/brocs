@@ -522,6 +522,7 @@ body.light-theme{
 
 .testimonial__image {
     margin-top: var(--margin-md);
+    margin-bottom: var(--margin-lg);
     position: relative;
 }
 
@@ -538,4 +539,75 @@ body.light-theme{
     background-color: var(--bg-color);
     width: 250px;
     margin-left: auto;
+}
+
+/* .testimonial-swiper {
+    overflow-x: hidden;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    top: initial;
+     bottom: 5%;
+} */
+
+.new__card {
+    position: relative;
+    text-align: center;
+    background-color: var(--light-color);
+    margin: 3rem 1.7rem;
+    padding-top: 4rem;
+    border: 1px solid var(--border-color);
+    overflow-y: hidden;
+    transition: .3s;
+}
+
+.new__tag {
+    position: absolute;
+    top: .7rem;
+    right: 1rem;
+    background-color: var(--bg-color);
+    color: var(--light-color);
+    padding: .5rem 1.2rem;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-bold);
+}
+
+.new__img {
+    margin: 2rem 0;
+}
+
+.new__title {
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.new__price {
+    font-weight: var(--font-bold);
+    color: var(--bg-color);
+}
+
+.new__button {
+    font-size: var(--font-size-sm);
+    transform: translateY(1rem);
+    opacity: 0;
+}
+
+.new__card:hover {
+    box-shadow: 0 12px 32px hsla(0, 0%, 20%, .1);
+    padding: 2rem 0 3rem 0;
+}
+
+.new__card:hover .new__button {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.new__card:hover .new__price {
+    margin-bottom: var(--margin-md);
 }
