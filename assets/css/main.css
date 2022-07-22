@@ -634,13 +634,14 @@ body.light-theme{
 }
 
 .newsletter__title {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-md);
     color: hsl(0, 0%, 15%);
     margin-bottom: var(--margin-md);
 }
 
 .newsletter__description {
     color: hsl(0, 0%, 35%);
+    font-size: 1.3rem;
 }
 
 .newsletter__subscribe {
