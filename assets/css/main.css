@@ -628,7 +628,7 @@ body.light-theme{
 
 .newsletter__bg {
     background-color: var(--bg-color);
-    padding: 3rem 3rem;
+    padding: 3rem 1rem;
     text-align: center;
     row-gap: 2.5rem;
 }
