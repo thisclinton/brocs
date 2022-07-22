@@ -569,13 +569,13 @@ body.light-theme{
 
 .new__tag {
     position: absolute;
-    top: .7rem;
+    top: 1rem;
     right: 1rem;
     background-color: var(--bg-color);
     color: var(--light-color);
-    padding: .5rem 1.2rem;
+    padding: .5rem 1rem;
     font-size: var(--font-size-sm);
-    font-weight: var(--font-bold);
+    font-weight: var(--font-medium);
 }
 
 .new__img {
@@ -601,6 +601,11 @@ body.light-theme{
 .new__card:hover {
     box-shadow: 0 12px 32px hsla(0, 0%, 20%, .1);
     padding: 2rem 0 3rem 0;
+    background-color: var(--bg-color);
+}
+
+.new__card:hover .new__tag {
+    background-color: var(--button-color);
 }
 
 .new__card:hover .new__button {
@@ -608,6 +613,15 @@ body.light-theme{
     opacity: 1;
 }
 
+.new__card:hover .new__title {
+    color: hsl(0, 0%, 15%);
+}
+
 .new__card:hover .new__price {
+    color: hsl(0, 0%, 15%);
     margin-bottom: var(--margin-md);
+}
+
+.new__card:hover .new__price {
+    margin-bottom: var(--margin-lg);
 }
