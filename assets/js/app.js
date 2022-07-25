@@ -36,6 +36,18 @@ const scrollHeader = () => {
 };
 
 window.addEventListener("scroll", scrollHeader);
+
+/*========== SWIPER ============*/
+let testimonialSwiper = new Swiper(".testimonial-swiper", {
+  spaceBetween: 30,
+  loop: "true",
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 /* const selectElement = selector => {
     const element = document.querySelector(selector);
     if(element) return element;
