@@ -3,6 +3,7 @@ const navMenu = document.getElementById("nav-menu");
 const navToggle = document.getElementById("nav-toggle");
 const navClose = document.getElementById("nav-close");
 const navLink = document.querySelectorAll(".nav__link");
+const themeToggleBtn = document.querySelector("#theme-toggle-btn");
 
 /*========== MENU SHOW ==========*/
 if (navToggle) {
@@ -38,14 +39,12 @@ const scrollHeader = () => {
 window.addEventListener("scroll", scrollHeader);
 
 /*========== SWIPER ============*/
-let testimonialSwiper = new Swiper(".testimonial-swiper", {
-  spaceBetween: 30,
-  loop: "true",
 
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+const bodyElement = document.body;
+
+themeToggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-theme");
+  console.log("clicked");
 });
 
 /* const selectElement = selector => {
