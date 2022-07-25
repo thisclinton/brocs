@@ -633,8 +633,11 @@ body.light-theme{
     margin: 0 1.4rem;
     background-color: var(--bg-color);
     padding: 3rem 3rem;
-    text-align: center;
     row-gap: 2.5rem;
+}
+
+.newsletter__content {
+    text-align: center;
 }
 
 .newsletter__title {
