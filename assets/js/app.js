@@ -40,12 +40,40 @@ window.addEventListener("scroll", scrollHeader);
 
 /*========== SWIPER ============*/
 
+/*========== THEME CHANGE ============*/
 const bodyElement = document.body;
+const currentTheme = localStorage.getItem("currentTheme");
+
+if (currentTheme) {
+  bodyElement.classList.add("dark-theme");
+}
 
 themeToggleBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark-theme");
-  console.log("clicked");
+
+  if (bodyElement.classList.contains("dark-theme")) {
+    localStorage.setItem("currentTheme", "themeActive");
+  } else {
+    localStorage.removeItem("currentTheme");
+  }
 });
+
+/*========== CART SHOW/CLOSE ============*/
+const cart = document.getElementById("cart");
+const cartBtn = document.getElementById("cart-btn");
+const cartClose = document.getElementById("cart-close");
+
+if (cartBtn) {
+  cartBtn.addEventListener("click", () => {
+    cart.classList.add("show-cart");
+  });
+}
+
+if (cartClose) {
+  cartClose.addEventListener("click", () => {
+    cart.classList.remove("show-cart");
+  });
+}
 
 /* const selectElement = selector => {
     const element = document.querySelector(selector);
