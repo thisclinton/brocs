@@ -83,6 +83,11 @@ let swiper = new Swiper(".mySwiper", {
   },
 });
 
+let newSwiper = new Swiper(".new-swiper", {
+  spaceBetween: 6,
+  loop: "true",
+});
+
 /* const selectElement = selector => {
     const element = document.querySelector(selector);
     if(element) return element;
