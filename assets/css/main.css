@@ -634,6 +634,7 @@ i{
 .testimonial__card {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     row-gap: 2rem;
 }
 
@@ -705,8 +706,7 @@ i{
 .swiper-slide {
     font-size: var(--font-size-sm);
     /* Center slide text vertically */
-     display: flex;
-    align-items: flex-start;
+    display: flex;
     flex-direction: column;
 }
 
@@ -732,15 +732,17 @@ i{
     right: initial;
     left: 6rem;
 }
-  
+
+.new {
+    margin: 0 3rem;
+}
+
 .new__card {
     position: relative;
     text-align: center;
     background-color: var(--light-color);
-    margin: 3rem 1.7rem;
-    padding-top: 4rem;
+    padding-top: 2rem;
     border: 1px solid var(--border-color);
-    overflow-y: hidden;
     transition: .3s;
 }
 
@@ -753,6 +755,7 @@ i{
     padding: .5rem 1rem;
     font-size: var(--font-size-sm);
     font-weight: var(--font-medium);
+    transition: .3s;
 }
 
 .new__img {
@@ -770,6 +773,8 @@ i{
 }
 
 .new__button {
+    margin: 0 auto;
+    text-align: center;
     font-size: var(--font-size-sm);
     transform: translateY(1rem);
     opacity: 0;
@@ -796,11 +801,11 @@ i{
 
 .new__card:hover .new__price {
     color: hsl(0, 0%, 15%);
-    margin-bottom: var(--margin-md);
+    margin-bottom: var(--margin-lg);
 }
 
-.new__card:hover .new__price {
-    margin-bottom: var(--margin-lg);
+.new__card:hover .new__data {
+    margin: var(--margin-sm) 0;
 }
 
 .newsletter__bg {
