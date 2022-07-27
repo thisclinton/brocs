@@ -75,6 +75,14 @@ if (cartClose) {
   });
 }
 
+/*========== SWIPER ============*/
+let swiper = new Swiper(".mySwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 /* const selectElement = selector => {
     const element = document.querySelector(selector);
     if(element) return element;
