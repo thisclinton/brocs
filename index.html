@@ -10,8 +10,11 @@
     <!-- Swiper.js styles -->
     <!-- <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css"/> -->
     <!-- Custom styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 <body>
     <header class="header" id="header">
@@ -330,10 +333,11 @@
             </div>
         </section>
         
-        <section class="section testimonial">
-            <div class="testimonial__container container grid">
-                <div>
-                     <div>
+        <section class="section testimonial container">
+
+            <div class="testimonial__container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
                         <div class="testimonial__card swiper-slide">
                             <div class="testimonial__quote">
                                 <i class="ri-double-quotes-l"></i>
@@ -357,7 +361,7 @@
                                 <i class="ri-double-quotes-l"></i>
                             </div>
                             <p class="testimonial__description">
-                                Indoor Crocs feature a warm fuzzy lining, when combined with the slight height of the sole that allows for your feet to be kept off the cold of the ground, they make an ideal choice for indoor wear in winter. The strap design allows for a versatile fit, providing secure comfort in a sandal style, or flipped back to become a slip on shoe.
+                                Indoor Crocs feature a warm fuzzy lining, when combined with the slight height of the sole that allows for your feet to be kept off the cold of the ground, they make an ideal choice for indoor wear in winter.
                             </p>
                             <h3 class="testimonial__date">Febraury 16, 2022</h3>
                             <div class="testimonial__data">
@@ -375,7 +379,7 @@
                                 <i class="ri-double-quotes-l"></i>
                             </div>
                             <p class="testimonial__description">
-                                Crocs are a versatile footwear choice, not only in terms of design but purpose for wear. Crocs are popular as a work shoe (with the brand even offering a workwear range). They are non-slip, making them a safe choice for baristas, waiters, other restaurant staff, medical staff, cleaners and more.
+                                Crocs are a versatile footwear choice, not only in terms of design but purpose for wear. Crocs are popular as a work shoe (with the brand even offering a workwear range).
                             </p>
                             <h3 class="testimonial__date">June 14, 2022</h3>
                             <div class="testimonial__data">
@@ -423,16 +427,14 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- <div class="swiper-button-next">
-                            <i class="ri-arrow-right-line"></i>
-                         </div>
-                         <div class="swiper-button-prev">
-                            <i class="ri-arrow-left-line"></i>
-                         </div> -->
+                    </div>  
+                    
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-line"></i>
+                    </div>
+                     <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-line"></i>
                      </div>
-
-                     
                 </div>
 
                 <div class="testimonial__image">
@@ -521,6 +523,38 @@
             </div>
 
         </section>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">
+                <div class="testimonial__quote">
+                    <i class="ri-double-quotes-l"></i>
+                </div>
+                <p class="testimonial__description">
+                    Crocs are designed to be a practical footwear choice. They feature air holes for great cooling and draining ability, which allows them to dry quickly if they become wet outdoors.
+                </p>
+                <h3 class="testimonial__date">March 11, 2022</h3>
+                <div class="testimonial__data">
+                    <img src="assets/images/cesar-rincon-XHVpWcr5grQ-unsplash.jpg" alt="" class="testimonial__data-img">
+                    <div class="testimonial__details">
+                        <h3 class="testimonial__details-name">Chris Hemsworth</h3>
+                        <span class="testimonial__details-job">Manager, Starbucks</span>
+
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
     </main> 
     
     <footer class="section footer">
@@ -607,9 +641,9 @@
             <i class="ri-close-line"></i>
         </button>
     </div> -->
-   
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
     
 </body>
 </html>
