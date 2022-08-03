@@ -1,6 +1,8 @@
 const featured = document.getElementById("featured-container");
-const product = document.getElementById("product-container");
-const newArrival = document.getElementById("new");
+const productContainer = document.getElementById("product-container");
+const newArrival = document.getElementById("new-arrival");
+const cartAdd = document.querySelectorAll(".add_cart");
+const cartContainer = document.getElementById("cart-container");
 
 const itemsData = [
   [
@@ -26,8 +28,66 @@ const itemsData = [
       desc: "Baseball-Pack-img",
     },
   ],
-  [{}, {}, {}, {}],
-  [{}, {}, {}, {}],
+  [
+    {
+      id: 1,
+      img: "assets/images/product-1.png",
+      title: "Classic printed camo Clog",
+      price: 79.99,
+      desc: "Baseball-Pack-img",
+    },
+    {
+      id: 2,
+      img: "assets/images/product-2.png",
+      title: "sedona prince camo pack",
+      price: 69.99,
+      desc: "Baseball-Pack-img",
+    },
+    {
+      id: 3,
+      img: "assets/images/product-3.png",
+      title: "Classic Clog purple",
+      price: 59.99,
+      desc: "Baseball-Pack-img",
+    },
+    {
+      id: 4,
+      img: "assets/images/product-4.png",
+      title: "Classic Clog orange",
+      price: 49.99,
+      desc: "Baseball-Pack-img",
+    },
+  ],
+  [
+    {
+      id: 1,
+      img: "assets/images/new-0.png",
+      title: "Classic Glitter Clog",
+      price: 54.99,
+      desc: "Classic-Glitter-Clog-img",
+    },
+    {
+      id: 2,
+      img: "assets/images/new-1.png",
+      title: "Specialist II clog",
+      price: 85.99,
+      desc: "Specialist-ii-clog-img",
+    },
+    {
+      id: 3,
+      img: "assets/images/new-2.png",
+      title: "Classic Clog Oxygen",
+      price: 49.99,
+      desc: "Classic-clog-oxygen-img",
+    },
+    {
+      id: 4,
+      img: "assets/images/new-3.png",
+      title: "Classic Clog Lemon",
+      price: 45.99,
+      desc: "Classic-clog-lemon-img",
+    },
+  ],
 ];
 
 const featuredSection = () => {
@@ -45,7 +105,7 @@ const featuredSection = () => {
                         <span class="featured__price">$${price}</span>
                     </div>
 
-                    <button class="button featured__button">
+                    <button class="button featured__button add_cart">
                         ADD TO CART
                     </button>
                 </article>
@@ -56,5 +116,51 @@ const featuredSection = () => {
 featuredSection();
 
 const productSection = () => {
-  return itemsData;
+  return itemsData[1].forEach((product) => {
+    const { id, img, title, price, desc } = product;
+    return (productContainer.innerHTML += `
+        <article class="product__card">
+          <img src=${img} alt=${desc} class="product__img">
+          <h3 class="product__title">${title}</h3>
+          <span class="product__price">$${price}</span>
+          <button onClick="addToCart(${id})" class="product__button add_cart">
+              <i class="ri-shopping-bag-line"></i>
+          </button>
+        </article>
+    `);
+  });
+};
+
+productSection();
+
+const newArrivalSection = () => {
+  return itemsData[2].forEach((newItems) => {
+    const { id, img, title, price, desc } = newItems;
+
+    return (newArrival.innerHTML += `
+      <article id="new-arrival-${id}" class="new__card swiper-slide">
+            <span class="new__tag">New</span>
+
+            <img src=${img} alt=${desc} class="new__img">
+
+            <div class="new__data">
+                <h3 class="new__title">${title}</h3>
+                <span class="new__price">$${price}</span>
+            </div>
+
+            <button onClick="addToCart(${id})" class="button new__button add_cart">Add to Cart</button>
+        </article>
+    `);
+  });
+};
+
+newArrivalSection();
+
+let addToCart = (id) => {
+  console.log(id, "added to cart");
+};
+
+const updateCart = () => {
+  cartContainer.innerHTML = "";
+  cartContainer.forEach;
 };
