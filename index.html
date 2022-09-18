@@ -30,7 +30,7 @@
                 <ul class="nav__list list">
                 
                     <li class="nav__item">
-                        <a href="#home" class="nav__link current">Home</a>
+                        <a href="#home" class="nav__link">Home</a>
                     </li>
                     <li class="nav__item">
                         <a href="#featured" class="nav__link">Featured</a>
@@ -56,11 +56,7 @@
                     <i class="ri-sun-line sun-icon"></i>
                     <i class="ri-moon-line moon-icon"></i>
                 </button>
-
-                <button class="btn place-items-center" id="heart-btn">
-                    <i class="ri-heart-line"></i>
-                </button>
-
+            
                 <button class="btn place-items-center" id="cart-btn">
                     <i class="ri-shopping-cart-line"></i>
                 </button>
@@ -174,18 +170,6 @@
                     <img src="assets/images/crocs.png" alt="" class="home__img">
                  </div>
 
-                 <div class="home__social">
-                    <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
-                        Facebook
-                    </a>
-                    <a href="https://www.twitter.com/" target="_blank" class="home__social-link">
-                        Twitter
-                    </a>
-                    <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
-                        Instagram
-                    </a>
-                 </div>
-
                  <div class="home__data">
                     <h1 class="home__title">
                         New Crocs <br> Collection BEAMS
@@ -204,6 +188,18 @@
                     </div>
                  </div>
             </div>
+
+            <div class="home__social">
+                <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                    Facebook
+                </a>
+                <a href="https://www.twitter.com/" target="_blank" class="home__social-link">
+                    Twitter
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                    Instagram
+                </a>
+             </div>
         </section>
 
         <section class="featured section container">
@@ -292,7 +288,7 @@
         
         <section class="section testimonial container">
 
-            <div class="testimonial__container">
+            <div class="testimonial__container grid">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="testimonial__card swiper-slide">
@@ -404,7 +400,7 @@
         <section class="new section container" id="new">
             <h2 class="section__title">New Arrivals</h2>
             <div class="new__container swiper new-swiper">
-                <div class="swiper-wrapper" id="new-arrival">
+                <div class="swiper-wrapper new__swiper" id="new-arrival">
                    <!--  <article class="new__card swiper-slide">
                         <span class="new__tag">New</span>
 
@@ -464,8 +460,8 @@
             </div>
         </section>
         
-        <section class="newsletter section">
-            <div class="newsletter__bg grid container">
+        <section class="newsletter section container">
+            <div class="newsletter__bg grid ">
                 <div class="newsletter__content">
                     <h2 class="newsletter__title">
                         Subsrcibe to <br> Our Newsletter

@@ -84,8 +84,20 @@ let swiper = new Swiper(".mySwiper", {
 });
 
 let newSwiper = new Swiper(".new-swiper", {
-  spaceBetween: 6,
+  spaceBetween: 24,
   loop: "true",
+
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+  },
 });
 
 /* const selectElement = selector => {
